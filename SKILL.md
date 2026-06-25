@@ -50,7 +50,7 @@ compatibility: Python 3.10+, requests, beautifulsoup4, lxml, python-docx
 
 1. **确认需求**
    - 解析：parts（默认全部四部分）、theme、output_dir、difficulty、source_sites、是否使用现有语料。
-   - 若用户提供评选方案 PDF 或空表 docx，读取并遵循；否则使用内置默认参数。
+   - 若用户提供空表 docx，读取并遵循；否则使用内置默认参数。
    - output_dir 默认取用户当前工作目录下的 `英语原创题_<YYYYMMDD>`，或用户指定的目录。
 
 2. **准备输出目录**
@@ -192,7 +192,7 @@ compatibility: Python 3.10+, requests, beautifulsoup4, lxml, python-docx
 
 ```json
 {
-  "title": "2026 年中学英语原创题评选",
+  "title": "2026 年中学英语原创题",
   "sections": [
     {
       "heading": "第三部分  语言运用（共两节，满分 30 分）",
