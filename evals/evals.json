@@ -1,0 +1,31 @@
+{
+  "skill_name": "english-gaokao-test-creator",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "使用附带的语料文件夹 evals/files/sample_corpus 生成 2026 年常德市中学英语原创题第三部分（语言运用：完形填空 15 题 + 语法填空 10 题）。主题为人与社会，难度约 0.60。输出到当前目录的 test_output_part3/。请直接使用现有语料，不要重新爬取网页。",
+      "expected_output": "在 test_output_part3/ 下生成：1) 一个 Word 试卷文件，包含第三部分试题、参考答案、逐题解析、基本信息表；2) 可能保留的语料简报或原始语料副本。",
+      "files": ["evals/files/sample_corpus"],
+      "expectations": [
+        "输出目录中存在 .docx 文件",
+        "Word 文档包含“完形填空”和“语法填空”标题",
+        "完形填空包含 15 道小题及 A/B/C/D 选项",
+        "语法填空包含 10 道小题",
+        "文档包含“参考答案”和“解析”部分",
+        "文档末尾包含基本信息表或“原创试题基本信息表”标题"
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "主题换成人与自然，只生成新高考 I 卷英语阅读理解 A 篇和七选五，使用附带的语料文件夹 evals/files/sample_corpus。输出到当前目录的 test_output_reading/。请直接使用现有语料，不要重新爬取网页。",
+      "expected_output": "在 test_output_reading/ 下生成一个 Word 文件，包含阅读理解 A 篇（含 5 道小题）和七选五（含 1 篇和 7 个选项），并附带参考答案与解析。",
+      "files": ["evals/files/sample_corpus"],
+      "expectations": [
+        "输出目录中存在 .docx 文件",
+        "Word 文档包含“阅读理解”或“阅读”标题",
+        "包含七选五的 7 个选项（A-G）",
+        "文档包含“参考答案”和“解析”部分"
+      ]
+    }
+  ]
+}
