@@ -239,7 +239,7 @@ def build_doc(spec, output_path):
 
     # Basic info form (embedded)
     doc.add_page_break()
-    add_title(doc, "常德市中学英语原创试题基本信息表")
+    add_title(doc, "英语原创试题基本信息表")
     form_data = spec.get("basic_info_form", [])
     if form_data:
         add_basic_info_table(doc, form_data)

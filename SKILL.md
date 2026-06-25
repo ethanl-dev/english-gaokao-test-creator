@@ -192,7 +192,7 @@ compatibility: Python 3.10+, requests, beautifulsoup4, lxml, python-docx
 
 ```json
 {
-  "title": "2026 年常德市中学英语原创题评选",
+  "title": "2026 年中学英语原创题评选",
   "sections": [
     {
       "heading": "第三部分  语言运用（共两节，满分 30 分）",
@@ -276,6 +276,6 @@ python scripts/build_test_docx.py \
 
 ## 示例用户 prompt
 
-> 帮我做一套 2026 常德市中学英语原创题，主题人与社会，包含听力、阅读、语言运用和写作，输出到桌面/英语原创题。
+> 帮我做一套 2026 中学英语原创题，主题人与社会，包含听力、阅读、语言运用和写作，输出到桌面/英语原创题。
 
 > 只要第三部分，主题换成人与自然，语料用 NPR 的 Science 栏目。
